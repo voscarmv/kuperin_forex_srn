@@ -1,0 +1,7 @@
+Just run:
+	$ ./experiment.sh
+The R squared results will be saved in R2.data
+
+Dependencies:
+	build-essential
+	wget
