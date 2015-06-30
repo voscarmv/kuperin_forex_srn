@@ -13,9 +13,9 @@ cat eurofxref-hist.xml | \
 	sed 's/.*rate="//;s/"\/>//' | \
 	tac | \
 	./rn | \
-	./ma 5 | \
+	./ma 10 | \
 	./naivepredict | \
-	./R2 103 | \
+	./R2 30 | \
 	sort -rn > R2.data
 
 

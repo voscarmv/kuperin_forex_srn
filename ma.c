@@ -7,9 +7,11 @@ void shift(double *r, int n);
 int main(int argc, char *argv[]){
 	int n;
 
-	if(argc > 1)
+	if(argc > 1){
 		n = atoi(argv[1]);
-	else
+		if(n < 2 || n > 1024)
+			return 2;
+	}else
 		return 1;
 
 	double *r = (double *) malloc(sizeof(double) * n);
